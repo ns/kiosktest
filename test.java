@@ -10,6 +10,8 @@ import javax.swing.*;
     frame.setSize(800, 600);
     frame.setLocationRelativeTo(null);
 
+    frame.getContentPane().setBackground(Color.RED);
+
     frame.setVisible(true);
   } 
  } 
