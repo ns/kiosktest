@@ -6,8 +6,13 @@ import javax.swing.*;
     JFrame frame = new JFrame("Simple GUI");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.pack();
+
+    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    double width = screenSize.getWidth();
+    double height = screenSize.getHeight();
+
     
-    frame.setSize(GetScreenWorkingWidth(), GetScreenWorkingHeight());
+    frame.setSize((int)width, (int)height);
     frame.setLocationRelativeTo(null);
 
     frame.getContentPane().setBackground(Color.RED);
