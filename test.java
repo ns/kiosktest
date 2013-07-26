@@ -7,11 +7,19 @@ import javax.swing.*;
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.pack();
     
-    frame.setSize(800, 600);
+    frame.setSize(GetScreenWorkingWidth(), GetScreenWorkingHeight());
     frame.setLocationRelativeTo(null);
 
     frame.getContentPane().setBackground(Color.RED);
 
     frame.setVisible(true);
-  } 
- } 
+  }
+
+  public static int GetScreenWorkingWidth() {
+    return java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().width;
+  }
+
+  public static int GetScreenWorkingHeight() {
+    return java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().height;
+  }
+ }
