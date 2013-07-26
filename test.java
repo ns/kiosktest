@@ -13,10 +13,14 @@ import javax.swing.*;
     double height = screenSize.getHeight();
 
     
-    frame.setSize((int)width, (int)height);
+    frame.setSize(800, 600);
     frame.setLocationRelativeTo(null);
 
-    frame.getContentPane().setBackground(Color.RED);
+    frame.getContentPane().setBackground(Color.BLACK);
+
+    Container container = frame.getContentPane();
+    container.setLayout(new BorderLayout());
+    container.add(new JLabel(new ImageIcon("test.png")), BorderLayout.CENTER);
 
     frame.setVisible(true);
   }
