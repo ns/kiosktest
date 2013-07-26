@@ -4,6 +4,7 @@ import javax.swing.*;
  public class test {
   public static void main(String[] args) {
     JFrame frame = new JFrame("Simple GUI");
+    frame.setUndecorated(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.pack();
 
